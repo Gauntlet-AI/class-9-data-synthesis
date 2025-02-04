@@ -1,4 +1,4 @@
-# Class 8: Data Synthesis with AI
+# Class 9: Data Synthesis with AI
 
 ## Introduction
 
@@ -27,42 +27,6 @@ Make sure to make the script executable with `chmod +x run.sh` in the CLI before
 ```
 ./run.sh jupyter #(runs jupyter notebook locally)
 ```
-
-## Local Setup (Alternative to Docker)
-
-If you prefer to run the examples locally:
-
-1. Ensure you have Python 3.11.0 or greater installed.
-
-2. Clone the repository:
-   ```
-   git clone [repository-url]
-   cd [repository-name]
-   ```
-
-3. Set up the environment:
-   ```
-   python3 -m venv .venv
-   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
-   pip install -r requirements.txt
-   ```
-
-4. Configure environment variables:
-   ```
-   cp .env.sample .env
-   # Edit .env with your API keys
-   ```
-5. export your `.env` variables to the system:
-(python-dotenv should handle this for you in each file, but in case you have env var issues)
-
-   **Linux / Mac / Bash**
-      ```
-      export $(grep -v '^#' .env | xargs)
-      ```
-6. Run an example:
-   ```
-   python3 langsmith_demo.py
-   ```
 
 ## Troubleshooting
 
